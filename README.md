@@ -1,2 +1,2 @@
-# OTP Generator
+# OTP Generator React App
 

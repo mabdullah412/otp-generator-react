@@ -12,6 +12,10 @@ h2 {
     font-weight: normal;
 }
 
+h2 span {
+    color: var(--color-primary);
+}
+
 .small-btn {
     text-transform: uppercase;
     font-family: 'DM Sans', sans-serif;
