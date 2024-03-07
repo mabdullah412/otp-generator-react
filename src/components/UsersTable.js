@@ -20,7 +20,7 @@ export default function UsersTable() {
     return (
       <div>
         <h1>Users table</h1>
-        <p><span>Query: </span>GET /users</p>
+        <p><span>Method & Action: </span>GET /users</p>
         <button onClick={getUsers}>Refresh</button>
         <table>
           <thead>

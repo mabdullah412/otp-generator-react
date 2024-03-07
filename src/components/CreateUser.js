@@ -21,18 +21,14 @@ export default function CreateUser() {
       body: formData
     })
     .then((res) => res.json())
-    .then((res) => {handleResponse(res);})
+    .then((res) => {alert(res.message);})
     .catch((err) => console.log(err.message));
-  }
-
-  function handleResponse(data) {
-    alert(data.message);
   }
 
   return (
     <div>
       <h1>Create User</h1>
-      <p><span>Query: </span>POST /users</p>
+      <p><span>Method & Action: </span>POST /users</p>
       <form onSubmit={handleSubmit}>
         <input 
           type="text" 
