@@ -13,7 +13,7 @@ export default function GenerateOTP() {
     // convert to x-www-form-urlencoded
     formData = new URLSearchParams(formData);
 
-    fetch('http://localhost:4000/api/users/generateOTP', {
+    fetch('https://otp-generator-api.vercel.app/api/users/generateOTP', {
       method: 'POST',
       body: formData
     })

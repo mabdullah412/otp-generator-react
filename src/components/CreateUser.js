@@ -16,7 +16,7 @@ export default function CreateUser() {
     // convert to x-www-form-urlencoded
     formData = new URLSearchParams(formData);
 
-    fetch('http://localhost:4000/api/users', {
+    fetch('https://otp-generator-api.vercel.app/api/users', {
       method: 'POST',
       body: formData
     })

@@ -8,7 +8,7 @@ export default function VerifyOTP() {
   function handleSubmit(event) {
     event.preventDefault();
 
-    fetch('http://localhost:4000/api/users/' + userId + '/verifyOTP?otp=' + otp.toString())
+    fetch('https://otp-generator-api.vercel.app/api/users/' + userId + '/verifyOTP?otp=' + otp.toString())
     .then((res) => res.json())
     .then((res) => {alert(res.message);})
     .catch((err) => console.log(err.message));

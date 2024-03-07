@@ -7,10 +7,9 @@ export default function UsersTable() {
     const [users, setUsers] = useState([]);
 
     function getUsers() {
-      fetch('http://localhost:4000/api/users')
+      fetch('https://otp-generator-api.vercel.app/api/users')
       .then((res) => res.json())
       .then((data) => {
-        console.log(data.users);
         setUsers(data.users);
       })
       .catch((err) => console.log(err.message));
