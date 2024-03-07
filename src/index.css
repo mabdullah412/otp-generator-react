@@ -1,0 +1,21 @@
+/* --- Google Fonts --- */
+
+/* DM Serif Display */
+/* font-family: 'DM Serif Display', serif; */
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
+
+/* DM Sans: Regular Medium Bold */
+/* font-family: 'DM Sans', sans-serif; */
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
+
+/* DM Mono: Regular */
+/* font-family: 'DM Mono', monospace; */
+@import url("https://fonts.googleapis.com/css2?family=DM+Mono&display=swap");
+
+:root {
+    --color-primary: #009178;
+    --color-secondary: #3e3b2a;
+    --color-background: #fffae5;
+    --color-styles: #f2fedc;
+    --color-primary-active: #01aa8e;
+}

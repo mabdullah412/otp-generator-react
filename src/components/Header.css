@@ -1,0 +1,33 @@
+.header {
+    padding: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h2 {
+    margin: 0;
+    font-family: 'DM Serif Display', serif;
+    font-weight: normal;
+}
+
+.small-btn {
+    text-transform: uppercase;
+    font-family: 'DM Sans', sans-serif;
+    padding: 8px 16px;
+    background-color: transparent;
+    color: var(--color-secondary);
+    border: 2px solid var(--color-secondary);
+    transition: 0.15s;
+    text-decoration: none;
+}
+.small-btn:hover {
+    cursor: pointer;
+    border: 2px solid var(--color-primary);
+    color: var(--color-primary);
+}
+.small-btn:active {
+    color: var(--color-styles);
+    background-color: var(--color-primary);
+}

@@ -1,5 +1,6 @@
 import './UsersTable.css';
 import { useEffect, useState } from "react";
+const moment = require("moment");
 
 export default function UsersTable() {
 
@@ -19,9 +20,9 @@ export default function UsersTable() {
 
     return (
       <div>
-        <h1>Users table</h1>
+        <h1>Users Table</h1>
         <p><span>Method & Action: </span>GET /users</p>
-        <button onClick={getUsers}>Refresh</button>
+        <button className='large-btn' onClick={getUsers}>Refresh</button>
         <table>
           <thead>
             <tr>
@@ -40,9 +41,7 @@ export default function UsersTable() {
                   <td>{user.firstName}</td>
                   <td>{user.phoneNumber}</td>
                   <td>{user.otp}</td>
-                  <td>
-                    {/* {user.otp_expiration_date.toDate()} */}
-                  </td>
+                  <td>{user.otp_expiration_date && moment(user.otp_expiration_date).format('MMMM Do YYYY, h:mm:ss a')}</td>
                 </tr>
               )
             })}

@@ -3,9 +3,9 @@ form {
     display: flex;
     flex-direction: column;
     justify-content: stretch;
-    gap: 8px;
+    gap: 16px;
 }
 
 input {
-    padding: 8px;
+    padding: 16px;
 }
